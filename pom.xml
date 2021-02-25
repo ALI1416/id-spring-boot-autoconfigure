@@ -7,7 +7,7 @@
 	<artifactId>id-spring-boot-autoconfigure</artifactId>
 	<version>0.0.1</version>
 
-	<name>Id</name>
+	<name>IdSpringbootAutoconfigure</name>
 	<description>High performance ID generator springboot autoconfigure</description>
 	<url>https://github.com/ALI1416/id-spring-boot-autoconfigure</url>
 

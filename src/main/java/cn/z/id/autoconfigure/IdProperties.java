@@ -1,4 +1,4 @@
-package cn.z.id.spring.boot.autoconfigure;
+package cn.z.id.autoconfigure;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
@@ -29,7 +29,7 @@ public class IdProperties {
      */
     private Long machineBits;
     /**
-     * 序列号位数(默认值14)
+     * 序列号位数(默认值12)
      */
     private Long sequenceBits;
 

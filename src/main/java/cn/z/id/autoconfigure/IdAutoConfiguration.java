@@ -52,7 +52,6 @@ public class IdAutoConfiguration {
      */
     @PostConstruct
     public void addPageInterceptor() {
-        System.out.println(888);
         // 存在配置
         if (!(idProperties.getMachineId() == null && idProperties.getMachineBits() == null && idProperties.getSequenceBits() == null)) {
             // machineId为null去设置默认值

@@ -19,7 +19,6 @@ public class IdProperties {
      * 前缀{@value}
      */
     public static final String ID_PREFIX = "id";
-
     /**
      * 机器码(默认值0)
      */

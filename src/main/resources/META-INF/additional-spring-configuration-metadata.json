@@ -3,21 +3,21 @@
     {
       "name": "id.machine-id",
       "type": "java.lang.Long",
-      "description": "高性能Id生成器-机器码.",
+      "description": "机器码.",
       "sourceType": "cn.z.id.autoconfigure.IdProperties",
       "defaultValue": 0
     },
     {
       "name": "id.machine-bits",
       "type": "java.lang.Long",
-      "description": "高性能Id生成器-机器码位数.",
+      "description": "机器码位数.",
       "sourceType": "cn.z.id.autoconfigure.IdProperties",
       "defaultValue": 8
     },
     {
       "name": "id.sequence-bits",
       "type": "java.lang.Long",
-      "description": "高性能Id生成器-序列号位数.",
+      "description": "序列号位数.",
       "sourceType": "cn.z.id.autoconfigure.IdProperties",
       "defaultValue": 12
     }

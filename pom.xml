@@ -8,13 +8,13 @@
   <version>1.1.0</version>
 
   <name>IdSpringbootAutoconfigure</name>
-  <description>High performance ID generator springboot autoconfigure</description>
+  <description>High performance snowflake ID generator springboot autoconfigure 高性能雪花ID生成器自动配置</description>
   <url>https://github.com/ALI1416/id-spring-boot-autoconfigure</url>
 
   <properties>
-    <jdk>1.8</jdk>
-    <maven.compiler.source>${jdk}</maven.compiler.source>
-    <maven.compiler.target>${jdk}</maven.compiler.target>
+    <jdk.version>1.8</jdk.version>
+    <maven.compiler.source>${jdk.version}</maven.compiler.source>
+    <maven.compiler.target>${jdk.version}</maven.compiler.target>
     <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -66,12 +66,6 @@
     </developer>
   </developers>
 
-  <scm>
-    <connection>scm:git:https://github.com/ALI1416/id-spring-boot-autoconfigure.git</connection>
-    <developerConnection>scm:git:https://github.com/ALI1416/id-spring-boot-autoconfigure.git</developerConnection>
-    <url>git:https://github.com/ALI1416/id-spring-boot-autoconfigure.git</url>
-  </scm>
-
   <distributionManagement>
     <snapshotRepository>
       <id>ossrh</id>
@@ -98,8 +92,8 @@
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.8.1</version>
             <configuration>
-              <source>${jdk}</source>
-              <target>${jdk}</target>
+              <source>${jdk.version}</source>
+              <target>${jdk.version}</target>
             </configuration>
           </plugin>
         </plugins>
@@ -114,8 +108,8 @@
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.8.1</version>
             <configuration>
-              <source>${jdk}</source>
-              <target>${jdk}</target>
+              <source>${jdk.version}</source>
+              <target>${jdk.version}</target>
             </configuration>
           </plugin>
           <plugin>
@@ -142,7 +136,7 @@
                   <goal>jar</goal>
                 </goals>
                 <configuration>
-                  <source>${jdk}</source>
+                  <source>${jdk.version}</source>
                   <additionalJOption>-Xdoclint:none</additionalJOption>
                 </configuration>
               </execution>

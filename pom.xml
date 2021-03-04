@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>cn.404z</groupId>
@@ -10,6 +10,12 @@
   <name>Id Springboot Autoconfigure</name>
   <description>High performance snowflake ID generator springboot autoconfigure 高性能雪花ID生成器自动配置</description>
   <url>https://github.com/ALI1416/id-spring-boot-autoconfigure</url>
+
+  <scm>
+    <connection>scm:git:https://github.com/ALI1416/id-spring-boot-autoconfigure.git</connection>
+    <developerConnection>scm:git:https://github.com/ALI1416/id-spring-boot-autoconfigure.git</developerConnection>
+    <url>git:https://github.com/ALI1416/id-spring-boot-autoconfigure.git</url>
+  </scm>
 
   <properties>
     <jdk.version>1.8</jdk.version>

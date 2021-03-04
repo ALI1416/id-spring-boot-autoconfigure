@@ -37,14 +37,14 @@ public class IdAutoConfiguration {
     /**
      * sequenceBits默认值{@value}
      */
-    private final static long DEFAULT_SEQUENCE_BITS = 14L;
+    private final static long DEFAULT_SEQUENCE_BITS = 12L;
     /**
      * IdProperties
      */
     private final IdProperties idProperties;
 
     /**
-     * 构造函数
+     * 构造函数(自动注入)
      *
      * @param idProperties IdProperties
      */

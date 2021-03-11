@@ -26,33 +26,72 @@ maven
 <dependency>
     <groupId>cn.404z</groupId>
     <artifactId>id-spring-boot-autoconfigure</artifactId>
-    <version>2.0.0</version>
+    <version>2.0.1</version>
 </dependency>
 ```
 
 gradle
 ```gradle
-implementation 'cn.404z:id-spring-boot-autoconfigure:2.0.0'
+implementation 'cn.404z:id-spring-boot-autoconfigure:2.0.1'
 ```
 
-### 运行报错需要导入依赖
-错误日志
-```txt
-Attempted to load Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' but snakeyaml was not found on the classpath
-```
-
+#### 额外依赖(运行未报错，不需要加)
 maven
 ```xml
-<dependency>
-    <groupId>org.yaml</groupId>
-    <artifactId>snakeyaml</artifactId>
-    <version>1.28</version>
-</dependency>
+    <dependency>
+      <groupId>org.yaml</groupId>
+      <artifactId>snakeyaml</artifactId>
+      <version>1.28</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.30</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-core</artifactId>
+      <version>1.2.3</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.2.3</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.annotation</groupId>
+      <artifactId>javax.annotation-api</artifactId>
+      <version>1.3.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-autoconfigure</artifactId>
+      <version>2.4.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-autoconfigure-processor</artifactId>
+      <version>2.4.3</version>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-configuration-processor</artifactId>
+      <version>2.4.3</version>
+      <optional>true</optional>
+    </dependency>
 ```
 
 gradle
 ```gradle
 implementation 'org.yaml:snakeyaml:1.28'
+implementation 'org.slf4j:slf4j-api:1.7.30'
+implementation 'ch.qos.logback:logback-core:1.2.3'
+implementation 'ch.qos.logback:logback-classic:1.2.3'
+implementation 'javax.annotation:javax.annotation-api:1.3.2'
+implementation 'org.springframework.boot:spring-boot-autoconfigure:2.4.3'
+implementation 'org.springframework.boot:spring-boot-autoconfigure-processor:2.4.3'
+implementation 'org.springframework.boot:spring-boot-configuration-processor:2.4.3'
 ```
 
 ## 使用方法

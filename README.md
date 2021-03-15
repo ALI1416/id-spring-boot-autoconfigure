@@ -23,75 +23,26 @@
 
 maven
 ```xml
-<dependency>
+  <!-- 必须依赖 -->
+  <dependency>
     <groupId>cn.404z</groupId>
     <artifactId>id-spring-boot-autoconfigure</artifactId>
-    <version>2.0.1</version>
-</dependency>
+    <version>2.1.0</version>
+  </dependency>
+  <!-- 额外依赖(运行未报错，不需要加) -->
+  <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter</artifactId>
+    <version>2.4.3</version>
+  </dependency>
 ```
 
 gradle
-```gradle
-implementation 'cn.404z:id-spring-boot-autoconfigure:2.0.1'
-```
-
-#### 额外依赖(运行未报错，不需要加)
-maven
-```xml
-    <dependency>
-      <groupId>org.yaml</groupId>
-      <artifactId>snakeyaml</artifactId>
-      <version>1.28</version>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-      <version>1.7.30</version>
-    </dependency>
-    <dependency>
-      <groupId>ch.qos.logback</groupId>
-      <artifactId>logback-core</artifactId>
-      <version>1.2.3</version>
-    </dependency>
-    <dependency>
-      <groupId>ch.qos.logback</groupId>
-      <artifactId>logback-classic</artifactId>
-      <version>1.2.3</version>
-    </dependency>
-    <dependency>
-      <groupId>javax.annotation</groupId>
-      <artifactId>javax.annotation-api</artifactId>
-      <version>1.3.2</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-autoconfigure</artifactId>
-      <version>2.4.3</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-autoconfigure-processor</artifactId>
-      <version>2.4.3</version>
-      <optional>true</optional>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-configuration-processor</artifactId>
-      <version>2.4.3</version>
-      <optional>true</optional>
-    </dependency>
-```
-
-gradle
-```gradle
-implementation 'org.yaml:snakeyaml:1.28'
-implementation 'org.slf4j:slf4j-api:1.7.30'
-implementation 'ch.qos.logback:logback-core:1.2.3'
-implementation 'ch.qos.logback:logback-classic:1.2.3'
-implementation 'javax.annotation:javax.annotation-api:1.3.2'
-implementation 'org.springframework.boot:spring-boot-autoconfigure:2.4.3'
-implementation 'org.springframework.boot:spring-boot-autoconfigure-processor:2.4.3'
-implementation 'org.springframework.boot:spring-boot-configuration-processor:2.4.3'
+```groovy
+// 必须依赖
+implementation 'cn.404z:id-spring-boot-autoconfigure:2.1.0'
+// 额外依赖(运行未报错，不需要加)
+implementation 'org.springframework.boot:spring-boot-starter:2.4.3'
 ```
 
 ## 使用方法
@@ -199,7 +150,7 @@ ID为：87913675669504
 QQ：1416978277  
 微信：1416978277  
 支付宝：1416978277@qq.com  
-![交流](https://ali1416.github.io/web/image/contact.png)
+![交流](https://cdn.jsdelivr.net/gh/ALI1416/web/image/contact.png)
 
 ## 赞助
-![赞助](https://ali1416.github.io/web/image/donate.png)
+![赞助](https://cdn.jsdelivr.net/gh/ALI1416/web/image/donate.png)

@@ -23,18 +23,18 @@
 
 maven
 ```xml
-  <!-- 必须依赖 -->
-  <dependency>
+<!-- 必须依赖 -->
+<dependency>
     <groupId>cn.404z</groupId>
     <artifactId>id-spring-boot-autoconfigure</artifactId>
     <version>2.1.0</version>
-  </dependency>
-  <!-- 额外依赖(运行未报错，不需要加) -->
-  <dependency>
+</dependency>
+<!-- 额外依赖(运行未报错，不需要加) -->
+<dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter</artifactId>
     <version>2.4.3</version>
-  </dependency>
+</dependency>
 ```
 
 gradle

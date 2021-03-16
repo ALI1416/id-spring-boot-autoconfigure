@@ -1,17 +1,21 @@
 # High performance snowflake ID generator springboot autoconfigure 高性能雪花ID生成器自动配置
 
 ## 项目地址
-[源码](https://github.com/ALI1416/id-spring-boot-autoconfigure)
+[Github源码](https://github.com/ALI1416/id-spring-boot-autoconfigure)
+[Gitee源码](https://gitee.com/ALI1416/id-spring-boot-autoconfigure)
 [![Build Status](https://travis-ci.com/ALI1416/id-spring-boot-autoconfigure.svg?branch=master)](https://travis-ci.com/ALI1416/id-spring-boot-autoconfigure)
 
-[测试](https://github.com/ALI1416/id-spring-boot-autoconfigure-test)
+[Github测试](https://github.com/ALI1416/id-spring-boot-autoconfigure-test)
+[Gitee测试](https://gitee.com/ALI1416/id-spring-boot-autoconfigure-test)
 [![Build Status](https://travis-ci.com/ALI1416/id-spring-boot-autoconfigure-test.svg?branch=master)](https://travis-ci.com/ALI1416/id-spring-boot-autoconfigure-test)
 
 ### 高性能雪花ID生成器项目地址
-[源码](https://github.com/ALI1416/id)
+[Github源码](https://github.com/ALI1416/id)
+[Gitee源码](https://gitee.com/ALI1416/id)
 [![Build Status](https://travis-ci.com/ALI1416/id.svg?branch=master)](https://travis-ci.com/ALI1416/id)
 
-[测试](https://github.com/ALI1416/id-test)
+[Github测试](https://github.com/ALI1416/id-test)
+[Gitee测试](https://gitee.com/ALI1416/id-test)
 [![Build Status](https://travis-ci.com/ALI1416/id-test.svg?branch=master)](https://travis-ci.com/ALI1416/id-test)
 
 ## 简介

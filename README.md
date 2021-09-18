@@ -31,22 +31,22 @@ maven
 <dependency>
     <groupId>cn.404z</groupId>
     <artifactId>id-spring-boot-autoconfigure</artifactId>
-    <version>2.1.0</version>
+    <version>2.3.0</version>
 </dependency>
 <!-- 额外依赖(运行未报错，不需要加) -->
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter</artifactId>
-    <version>2.4.3</version>
+    <version>2.5.4</version>
 </dependency>
 ```
 
 gradle
 ```groovy
 // 必须依赖
-implementation 'cn.404z:id-spring-boot-autoconfigure:2.1.0'
+implementation 'cn.404z:id-spring-boot-autoconfigure:2.3.0'
 // 额外依赖(运行未报错，不需要加)
-implementation 'org.springframework.boot:spring-boot-starter:2.4.3'
+implementation 'org.springframework.boot:spring-boot-starter:2.5.4'
 ```
 
 ## 使用方法

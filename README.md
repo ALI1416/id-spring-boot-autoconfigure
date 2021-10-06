@@ -3,20 +3,20 @@
 ## 项目地址
 [Github源码](https://github.com/ALI1416/id-spring-boot-autoconfigure)
 [Gitee源码](https://gitee.com/ALI1416/id-spring-boot-autoconfigure)
-[![Build Status](https://travis-ci.com/ALI1416/id-spring-boot-autoconfigure.svg?branch=master)](https://travis-ci.com/ALI1416/id-spring-boot-autoconfigure)
+[![Build Status](https://travis-ci.com/ALI1416/id-spring-boot-autoconfigure.svg?branch=master)](https://app.travis-ci.com/ALI1416/id-spring-boot-autoconfigure)
 
 [Github测试](https://github.com/ALI1416/id-spring-boot-autoconfigure-test)
 [Gitee测试](https://gitee.com/ALI1416/id-spring-boot-autoconfigure-test)
-[![Build Status](https://travis-ci.com/ALI1416/id-spring-boot-autoconfigure-test.svg?branch=master)](https://travis-ci.com/ALI1416/id-spring-boot-autoconfigure-test)
+[![Build Status](https://travis-ci.com/ALI1416/id-spring-boot-autoconfigure-test.svg?branch=master)](https://app.travis-ci.com/ALI1416/id-spring-boot-autoconfigure-test)
 
 ### 高性能雪花ID生成器项目地址
 [Github源码](https://github.com/ALI1416/id)
 [Gitee源码](https://gitee.com/ALI1416/id)
-[![Build Status](https://travis-ci.com/ALI1416/id.svg?branch=master)](https://travis-ci.com/ALI1416/id)
+[![Build Status](https://travis-ci.com/ALI1416/id.svg?branch=master)](https://app.travis-ci.com/ALI1416/id)
 
 [Github测试](https://github.com/ALI1416/id-test)
 [Gitee测试](https://gitee.com/ALI1416/id-test)
-[![Build Status](https://travis-ci.com/ALI1416/id-test.svg?branch=master)](https://travis-ci.com/ALI1416/id-test)
+[![Build Status](https://travis-ci.com/ALI1416/id-test.svg?branch=master)](https://app.travis-ci.com/ALI1416/id-test)
 
 ## 简介
 本项目使用了SpringBoot的自动配置，只需要在配置文件中写入初始化参数即可，不用写死在代码中。

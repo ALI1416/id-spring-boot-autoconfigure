@@ -1,4 +1,4 @@
-# High performance snowflake ID generator springboot autoconfigure 高性能雪花ID生成器自动配置
+# High Performance Snowflake ID Generator Springboot Autoconfigure 高性能雪花ID生成器自动配置
 
 ## 项目地址
 [Github源码](https://github.com/ALI1416/id-spring-boot-autoconfigure)
@@ -154,7 +154,7 @@ ID为：87913675669504
 QQ：1416978277  
 微信：1416978277  
 支付宝：1416978277@qq.com  
-![交流](https://cdn.jsdelivr.net/gh/ALI1416/web/image/contact.png)
+![交流](https://cdn.jsdelivr.net/gh/ALI1416/ALI1416/image/contact.png)
 
 ## 赞助
-![赞助](https://cdn.jsdelivr.net/gh/ALI1416/web/image/donate.png)
+![赞助](https://cdn.jsdelivr.net/gh/ALI1416/ALI1416/image/donate.png)

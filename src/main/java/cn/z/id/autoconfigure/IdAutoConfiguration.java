@@ -25,19 +25,19 @@ public class IdAutoConfiguration {
     /**
      * 日志实例
      */
-    private final static Logger log = LoggerFactory.getLogger(IdAutoConfiguration.class);
+    private static final Logger log = LoggerFactory.getLogger(IdAutoConfiguration.class);
     /**
      * machineId默认值{@value}
      */
-    private final static long DEFAULT_MACHINE_ID = 0L;
+    private static final long DEFAULT_MACHINE_ID = 0L;
     /**
      * machineBits默认值{@value}
      */
-    private final static long DEFAULT_MACHINE_BITS = 8L;
+    private static final long DEFAULT_MACHINE_BITS = 8L;
     /**
      * sequenceBits默认值{@value}
      */
-    private final static long DEFAULT_SEQUENCE_BITS = 12L;
+    private static final long DEFAULT_SEQUENCE_BITS = 12L;
     /**
      * IdProperties
      */
@@ -59,7 +59,7 @@ public class IdAutoConfiguration {
     public void init() {
         // 存在配置
         if (!(idProperties.getMachineId() == null && idProperties.getMachineBits() == null && idProperties.getSequenceBits() == null)) {
-            String msg = "读取到配置文件";
+            String msg = "读取到配置";
             // machineId为null去设置默认值
             if (idProperties.getMachineId() == null) {
                 idProperties.setMachineId(DEFAULT_MACHINE_ID);

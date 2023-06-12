@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.test.context.SpringBootTest;
 
 /**
- * <h1>高性能雪花ID生成器SpringBoot自动配置测试01</h1>
+ * <h1>高性能雪花ID生成器SpringBoot自动配置测试</h1>
  *
  * <p>
  * createDate 2021/09/22 16:24:01

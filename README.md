@@ -1,10 +1,10 @@
 # High Performance Snowflake ID Generator Springboot Autoconfigure 高性能雪花ID生成器SpringBoot自动配置
 
-[![License](https://img.shields.io/github/license/ali1416/id-spring-boot-autoconfigure?label=License)](https://opensource.org/licenses/BSD-3-Clause)
+[![License](https://img.shields.io/github/license/ALI1416/id-spring-boot-autoconfigure?label=License)](https://www.apache.org/licenses/LICENSE-2.0.txt)
 [![Java Support](https://img.shields.io/badge/Java-8+-green)](https://openjdk.org/)
 [![Maven Central](https://img.shields.io/maven-central/v/cn.404z/id-spring-boot-autoconfigure?label=Maven%20Central)](https://mvnrepository.com/artifact/cn.404z/id-spring-boot-autoconfigure)
-[![Tag](https://img.shields.io/github/v/tag/ali1416/id-spring-boot-autoconfigure?label=Tag)](https://github.com/ALI1416/id-spring-boot-autoconfigure/tags)
-[![Repo Size](https://img.shields.io/github/repo-size/ali1416/id-spring-boot-autoconfigure?label=Repo%20Size&color=success)](https://github.com/ALI1416/id-spring-boot-autoconfigure/archive/refs/heads/master.zip)
+[![Tag](https://img.shields.io/github/v/tag/ALI1416/id-spring-boot-autoconfigure?label=Tag)](https://github.com/ALI1416/id-spring-boot-autoconfigure/tags)
+[![Repo Size](https://img.shields.io/github/repo-size/ALI1416/id-spring-boot-autoconfigure?label=Repo%20Size&color=success)](https://github.com/ALI1416/id-spring-boot-autoconfigure/archive/refs/heads/master.zip)
 
 [![Java CI](https://github.com/ALI1416/id-spring-boot-autoconfigure/actions/workflows/ci.yml/badge.svg)](https://github.com/ALI1416/id-spring-boot-autoconfigure/actions/workflows/ci.yml)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=ALI1416_id-spring-boot-autoconfigure&metric=coverage)
@@ -20,14 +20,14 @@
 
 ```xml
 <dependency>
-    <groupId>cn.404z</groupId>
-    <artifactId>id-spring-boot-autoconfigure</artifactId>
-    <version>2.5.0</version>
+  <groupId>cn.404z</groupId>
+  <artifactId>id-spring-boot-autoconfigure</artifactId>
+  <version>2.6.0</version>
 </dependency>
 <dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter</artifactId>
-    <version>2.7.9</version>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter</artifactId>
+  <version>2.7.12</version>
 </dependency>
 ```
 
@@ -150,14 +150,17 @@ log.info("ID为：{}", Id.next());
 [main] INFO c.z.i.a.IdAutoConfigurationTest - ID为：87913675669504
 ```
 
-## 交流
+更多请见[测试](./src/test)
 
-- [x] QQ：`1416978277`
-- [x] 微信：`1416978277`
-- [x] 支付宝：`1416978277@qq.com`
+## 更新日志
 
-![交流](https://cdn.jsdelivr.net/gh/ALI1416/ALI1416/image/contact.png)
+[点击查看](./CHANGELOG.md)
 
-## 赞助
+## 关于
 
-![赞助](https://cdn.jsdelivr.net/gh/ALI1416/ALI1416/image/donate.png)
+<object data="https://404z.cn/images/about.svg" style="max-width:100%;">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://404z.cn/images/about.dark.svg">
+    <img alt="About" src="https://404z.cn/images/about.light.svg">
+  </picture>
+</object>

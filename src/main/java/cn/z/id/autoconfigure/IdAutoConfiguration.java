@@ -59,24 +59,30 @@ public class IdAutoConfiguration {
     public void init() {
         // 存在配置
         if (!(idProperties.getMachineId() == null && idProperties.getMachineBits() == null && idProperties.getSequenceBits() == null)) {
-            String msg = "读取到配置";
+            log.info("读取配置...");
+            String msg = "机器码MACHINE_ID ";
             // machineId为null去设置默认值
             if (idProperties.getMachineId() == null) {
                 idProperties.setMachineId(DEFAULT_MACHINE_ID);
+                msg += DEFAULT_MACHINE_ID + " (默认)";
             } else {
-                msg += "，MACHINE_ID为" + idProperties.getMachineId();
+                msg += idProperties.getMachineId() + " ";
             }
             // machineBits为null去设置默认值
+            msg += "，机器码位数MACHINE_BITS ";
             if (idProperties.getMachineBits() == null) {
                 idProperties.setMachineBits(DEFAULT_MACHINE_BITS);
+                msg += DEFAULT_MACHINE_BITS + " (默认)";
             } else {
-                msg += "，MACHINE_BITS为" + idProperties.getMachineBits();
+                msg += idProperties.getMachineBits() + " ";
             }
             // sequenceBits为null去设置默认值
+            msg += "，序列号位数SEQUENCE_BITS ";
             if (idProperties.getSequenceBits() == null) {
                 idProperties.setSequenceBits(DEFAULT_SEQUENCE_BITS);
+                msg += DEFAULT_SEQUENCE_BITS + " (默认)";
             } else {
-                msg += "，SEQUENCE_BITS为" + idProperties.getSequenceBits();
+                msg += idProperties.getSequenceBits() + " ";
             }
             log.info(msg);
             // 初始化

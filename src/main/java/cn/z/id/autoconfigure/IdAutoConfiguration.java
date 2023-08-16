@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import javax.annotation.PostConstruct;
 
 /**
- * <h1>高性能Id生成器自动配置</h1>
+ * <h1>高性能雪花ID生成器自动配置</h1>
  *
  * <p>
  * createDate 2021/02/25 14:41:05
@@ -59,8 +59,7 @@ public class IdAutoConfiguration {
     public void init() {
         // 存在配置
         if (!(idProperties.getMachineId() == null && idProperties.getMachineBits() == null && idProperties.getSequenceBits() == null)) {
-            log.info("读取配置...");
-            String msg = "机器码MACHINE_ID ";
+            String msg = "高性能雪花ID生成器配置：机器码MACHINE_ID ";
             // machineId为null去设置默认值
             if (idProperties.getMachineId() == null) {
                 idProperties.setMachineId(DEFAULT_MACHINE_ID);
@@ -82,7 +81,7 @@ public class IdAutoConfiguration {
                 idProperties.setSequenceBits(DEFAULT_SEQUENCE_BITS);
                 msg += DEFAULT_SEQUENCE_BITS + " (默认)";
             } else {
-                msg += idProperties.getSequenceBits() + " ";
+                msg += idProperties.getSequenceBits();
             }
             log.info(msg);
             // 初始化

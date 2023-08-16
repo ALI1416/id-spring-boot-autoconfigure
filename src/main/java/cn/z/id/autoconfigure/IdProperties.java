@@ -3,7 +3,7 @@ package cn.z.id.autoconfigure;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
- * <h1>高性能Id生成器配置属性</h1>
+ * <h1>高性能雪花ID生成器配置属性</h1>
  *
  * <p>
  * createDate 2021/02/25 14:40:55

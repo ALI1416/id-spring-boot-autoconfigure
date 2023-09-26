@@ -22,7 +22,7 @@
 <dependency>
   <groupId>cn.404z</groupId>
   <artifactId>id-spring-boot-autoconfigure</artifactId>
-  <version>2.8.0</version>
+  <version>3.0.0</version>
 </dependency>
 <dependency>
   <groupId>org.springframework.boot</groupId>
@@ -33,124 +33,61 @@
 
 ## 使用方法
 
-### 正常使用
-
-配置文件
-
-```yml
-id:
-  machine-id: 0
-  machine-bits: 8
-  sequence-bits: 14
-```
-
-代码
+### 直接调用
 
 ```java
+// id:
+//   machine-id: 0
+//   machine-bits: 8
+//   sequence-bits: 14
 log.info("ID {}", Id.next());
+// INFO c.z.i.autoconfigure.IdAutoConfiguration  : 高性能雪花ID生成器配置：机器码MACHINE_ID 0 ，机器码位数MACHINE_BITS 8 ，序列号位数SEQUENCE_BITS 14
+// INFO cn.z.id.Id                               : 高性能雪花ID生成器预初始化：机器码MACHINE_ID 0 ，机器码位数MACHINE_BITS 8 ，序列号位数SEQUENCE_BITS 12 ，最大机器码MACHINE_ID 255 ；1ms最多生成ID 4096 个，起始时间 2021-01-01 08:00:00.0 ，失效时间 2299-09-27 23:10:22.207 ，大约可使用 278 年
+// INFO cn.z.id.Id                               : 高性能雪花ID生成器初始化：机器码MACHINE_ID 0 ，机器码位数MACHINE_BITS 8 ，序列号位数SEQUENCE_BITS 14 ，最大机器码MACHINE_ID 255 ；1ms最多生成ID 16384 个，起始时间 2021-01-01 08:00:00.0 ，失效时间 2090-09-07 23:47:35.551 ，大约可使用 69 年
+// INFO c.z.i.a.IdAutoConfigurationTest          : Started IdAutoConfigurationTest in 0.899 seconds (JVM running for 1.828)
+// INFO c.z.i.a.IdAutoConfigurationTest          : ID 361782932349648897
 ```
 
-结果
-
-```txt
-INFO c.z.i.autoconfigure.IdAutoConfiguration  : 读取配置...
-INFO c.z.i.autoconfigure.IdAutoConfiguration  : 机器码MACHINE_ID 0 ，机器码位数MACHINE_BITS 8 ，序列号位数SEQUENCE_BITS 14
-INFO cn.z.id.Id                               : 预初始化...
-INFO cn.z.id.Id                               : 机器码MACHINE_ID 0 ，机器码位数MACHINE_BITS 8 ，序列号位数SEQUENCE_BITS 12
-INFO cn.z.id.Id                               : 最大机器码MACHINE_ID 255 ，1ms内最多生成ID数量 4096 ，时钟最早回拨到 2021-01-01 08:00:00.0 ，可使用时间大约 278 年，失效时间 2299-09-27 23:10:22.207
-INFO cn.z.id.Id                               : 初始化...
-INFO cn.z.id.Id                               : 机器码MACHINE_ID 0 ，机器码位数MACHINE_BITS 8 ，序列号位数SEQUENCE_BITS 14
-INFO cn.z.id.Id                               : 最大机器码MACHINE_ID 255 ，1ms内最多生成ID数量 16384 ，时钟最早回拨到 2021-01-01 08:00:00.0 ，可使用时间大约 69 年，失效时间 2090-09-07 23:47:35.551
-INFO c.z.i.a.IdAutoConfigurationTest          : Started IdAutoConfigurationTest in 0.899 seconds (JVM running for 1.828)
-INFO c.z.i.a.IdAutoConfigurationTest          : ID 339682552790908928
-```
-
-### 不配置属性
-
-配置文件
-
-```yml
-# 不需要配置
-```
-
-代码
+### 没有配置
 
 ```java
+// # 不需要配置
 log.info("ID {}", Id.next());
-```
-
-结果
-
-```txt
-INFO cn.z.id.Id                               : 预初始化...
-INFO cn.z.id.Id                               : 机器码MACHINE_ID 0 ，机器码位数MACHINE_BITS 8 ，序列号位数SEQUENCE_BITS 12
-INFO cn.z.id.Id                               : 最大机器码MACHINE_ID 255 ，1ms内最多生成ID数量 4096 ，时钟最早回拨到 2021-01-01 08:00:00.0 ，可使用时间大约 278 年，失效时间 2299-09-27 23:10:22.207
-INFO c.z.i.a.IdAutoConfigurationTest          : Started IdAutoConfigurationTest in 0.899 seconds (JVM running for 1.828)
-INFO c.z.i.a.IdAutoConfigurationTest          : ID 84920754824544256
+// INFO c.z.i.autoconfigure.IdAutoConfiguration  : 高性能雪花ID生成器配置：机器码MACHINE_ID 0 (默认)，机器码位数MACHINE_BITS 8 (默认)，序列号位数SEQUENCE_BITS 12 (默认)
+// INFO cn.z.id.Id                               : 高性能雪花ID生成器预初始化：机器码MACHINE_ID 0 ，机器码位数MACHINE_BITS 8 ，序列号位数SEQUENCE_BITS 12 ，最大机器码MACHINE_ID 255 ；1ms最多生成ID 4096 个，起始时间 2021-01-01 08:00:00.0 ，失效时间 2299-09-27 23:10:22.207 ，大约可使用 278 年
+// INFO cn.z.id.Id                               : 高性能雪花ID生成器初始化：机器码MACHINE_ID 0 ，机器码位数MACHINE_BITS 8 ，序列号位数SEQUENCE_BITS 12 ，最大机器码MACHINE_ID 255 ；1ms最多生成ID 4096 个，起始时间 2021-01-01 08:00:00.0 ，失效时间 2299-09-27 23:10:22.207 ，大约可使用 278 年
+// INFO c.z.i.a.IdAutoConfigurationTest          : Started IdAutoConfigurationTest in 0.899 seconds (JVM running for 1.828)
+// INFO c.z.i.a.IdAutoConfigurationTest          : ID 90445819549843456
 ```
 
 ### 配置部分属性
 
-配置文件
-
-```yml
-id:
-  machine-id: 10
-```
-
-代码
-
 ```java
+// id:
+//   machine-id: 10
 log.info("ID {}", Id.next());
-```
-
-结果
-
-```txt
-INFO c.z.i.autoconfigure.IdAutoConfiguration  : 读取配置...
-INFO c.z.i.autoconfigure.IdAutoConfiguration  : 机器码MACHINE_ID 10 ，机器码位数MACHINE_BITS 8 (默认)，序列号位数SEQUENCE_BITS 12 (默认)
-INFO cn.z.id.Id                               : 预初始化...
-INFO cn.z.id.Id                               : 机器码MACHINE_ID 0 ，机器码位数MACHINE_BITS 8 ，序列号位数SEQUENCE_BITS 12
-INFO cn.z.id.Id                               : 最大机器码MACHINE_ID 255 ，1ms内最多生成ID数量 4096 ，时钟最早回拨到 2021-01-01 08:00:00.0 ，可使用时间大约 278 年，失效时间 2299-09-27 23:10:22.207
-INFO cn.z.id.Id                               : 初始化...
-INFO cn.z.id.Id                               : 机器码MACHINE_ID 10 ，机器码位数MACHINE_BITS 8 ，序列号位数SEQUENCE_BITS 12
-INFO cn.z.id.Id                               : 最大机器码MACHINE_ID 255 ，1ms内最多生成ID数量 4096 ，时钟最早回拨到 2021-01-01 08:00:00.0 ，可使用时间大约 278 年，失效时间 2299-09-27 23:10:22.207
-INFO c.z.i.a.IdAutoConfigurationTest          : Started IdAutoConfigurationTest in 0.899 seconds (JVM running for 1.828)
-INFO c.z.i.a.IdAutoConfigurationTest          : ID 84920800342220800
+// INFO c.z.i.autoconfigure.IdAutoConfiguration  : 高性能雪花ID生成器配置：机器码MACHINE_ID 10 ，机器码位数MACHINE_BITS 8 (默认)，序列号位数SEQUENCE_BITS 12 (默认)
+// INFO cn.z.id.Id                               : 高性能雪花ID生成器预初始化：机器码MACHINE_ID 0 ，机器码位数MACHINE_BITS 8 ，序列号位数SEQUENCE_BITS 12 ，最大机器码MACHINE_ID 255 ；1ms最多生成ID 4096 个，起始时间 2021-01-01 08:00:00.0 ，失效时间 2299-09-27 23:10:22.207 ，大约可使用 278 年
+// INFO cn.z.id.Id                               : 高性能雪花ID生成器初始化：机器码MACHINE_ID 10 ，机器码位数MACHINE_BITS 8 ，序列号位数SEQUENCE_BITS 12 ，最大机器码MACHINE_ID 255 ；1ms最多生成ID 4096 个，起始时间 2021-01-01 08:00:00.0 ，失效时间 2299-09-27 23:10:22.207 ，大约可使用 278 年
+// INFO c.z.i.a.IdAutoConfigurationTest          : Started IdAutoConfigurationTest in 0.899 seconds (JVM running for 1.828)
+// INFO c.z.i.a.IdAutoConfigurationTest          : ID 90445884320423937
 ```
 
 ### 配置属性后又手动初始化
 
-配置文件
-
-```yml
-id:
-  machine-id: 0
-  machine-bits: 8
-  sequence-bits: 6
-```
-
-代码
-
 ```java
+// id:
+//   machine-id: 0
+//   machine-bits: 8
+//   sequence-bits: 6
 Id.init(20, 6, 10);
 log.info("ID {}", Id.next());
-```
-
-结果
-
-```txt
-INFO c.z.i.autoconfigure.IdAutoConfiguration  : 读取配置...
-INFO c.z.i.autoconfigure.IdAutoConfiguration  : 机器码MACHINE_ID 0 ，机器码位数MACHINE_BITS 8 ，序列号位数SEQUENCE_BITS 6
-INFO cn.z.id.Id                               : 预初始化...
-INFO cn.z.id.Id                               : 机器码MACHINE_ID 0 ，机器码位数MACHINE_BITS 8 ，序列号位数SEQUENCE_BITS 12
-INFO cn.z.id.Id                               : 最大机器码MACHINE_ID 255 ，1ms内最多生成ID数量 4096 ，时钟最早回拨到 2021-01-01 08:00:00.0 ，可使用时间大约 278 年，失效时间 2299-09-27 23:10:22.207
-INFO cn.z.id.Id                               : 初始化...
-INFO cn.z.id.Id                               : 机器码MACHINE_ID 0 ，机器码位数MACHINE_BITS 8 ，序列号位数SEQUENCE_BITS 6
-INFO cn.z.id.Id                               : 最大机器码MACHINE_ID 255 ，1ms内最多生成ID数量 64 ，时钟最早回拨到 2021-01-01 08:00:00.0 ，可使用时间大约 17851 年，失效时间 19860-03-05 19:03:41.311
-INFO c.z.i.a.IdAutoConfigurationTest          : Started IdAutoConfigurationTest in 0.899 seconds (JVM running for 1.828)
-WARN cn.z.id.Id                               : 已经初始化过了，不可重复初始化！
-INFO c.z.i.a.IdAutoConfigurationTest          : ID 1326888443904000
+// INFO c.z.i.autoconfigure.IdAutoConfiguration  : 高性能雪花ID生成器配置：机器码MACHINE_ID 0 ，机器码位数MACHINE_BITS 8 ，序列号位数SEQUENCE_BITS 6
+// INFO cn.z.id.Id                               : 高性能雪花ID生成器预初始化：机器码MACHINE_ID 0 ，机器码位数MACHINE_BITS 8 ，序列号位数SEQUENCE_BITS 12 ，最大机器码MACHINE_ID 255 ；1ms最多生成ID 4096 个，起始时间 2021-01-01 08:00:00.0 ，失效时间 2299-09-27 23:10:22.207 ，大约可使用 278 年
+// INFO cn.z.id.Id                               : 高性能雪花ID生成器初始化：机器码MACHINE_ID 0 ，机器码位数MACHINE_BITS 8 ，序列号位数SEQUENCE_BITS 6 ，最大机器码MACHINE_ID 255 ；1ms最多生成ID 64 个，起始时间 2021-01-01 08:00:00.0 ，失效时间 19860-03-05 19:03:41.311 ，大约可使用 17851 年
+// INFO c.z.i.a.IdAutoConfigurationTest          : Started IdAutoConfigurationTest in 0.899 seconds (JVM running for 1.828)
+// WARN cn.z.id.Id                               : 已经初始化过了，不可重复初始化！
+// INFO c.z.i.a.IdAutoConfigurationTest          : ID 1413217897070592
 ```
 
 更多请见[测试](./src/test)

@@ -1,4 +1,4 @@
-# test 测试配置
+# normal 直接调用
 id:
   machine-id: 0
   machine-bits: 8

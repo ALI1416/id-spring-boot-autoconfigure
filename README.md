@@ -53,7 +53,7 @@ log.info("ID {}", Id.next());
 ```java
 // # 不需要配置
 log.info("ID {}", Id.next());
-// INFO c.z.i.autoconfigure.IdAutoConfiguration  : 高性能雪花ID生成器配置：机器码MACHINE_ID 0 (默认)，机器码位数MACHINE_BITS 8 (默认)，序列号位数SEQUENCE_BITS 12 (默认)
+// INFO c.z.i.autoconfigure.IdAutoConfiguration  : 高性能雪花ID生成器配置：机器码MACHINE_ID 0 ，机器码位数MACHINE_BITS 8 ，序列号位数SEQUENCE_BITS 12 
 // INFO cn.z.id.Id                               : 高性能雪花ID生成器预初始化：机器码MACHINE_ID 0 ，机器码位数MACHINE_BITS 8 ，序列号位数SEQUENCE_BITS 12 ，最大机器码MACHINE_ID 255 ；1ms最多生成ID 4096 个，起始时间 2021-01-01 08:00:00.0 ，失效时间 2299-09-27 23:10:22.207 ，大约可使用 278 年
 // INFO cn.z.id.Id                               : 高性能雪花ID生成器初始化：机器码MACHINE_ID 0 ，机器码位数MACHINE_BITS 8 ，序列号位数SEQUENCE_BITS 12 ，最大机器码MACHINE_ID 255 ；1ms最多生成ID 4096 个，起始时间 2021-01-01 08:00:00.0 ，失效时间 2299-09-27 23:10:22.207 ，大约可使用 278 年
 // INFO c.z.i.a.IdAutoConfigurationTest          : Started IdAutoConfigurationTest in 0.899 seconds (JVM running for 1.828)
@@ -66,7 +66,7 @@ log.info("ID {}", Id.next());
 // id:
 //   machine-id: 10
 log.info("ID {}", Id.next());
-// INFO c.z.i.autoconfigure.IdAutoConfiguration  : 高性能雪花ID生成器配置：机器码MACHINE_ID 10 ，机器码位数MACHINE_BITS 8 (默认)，序列号位数SEQUENCE_BITS 12 (默认)
+// INFO c.z.i.autoconfigure.IdAutoConfiguration  : 高性能雪花ID生成器配置：机器码MACHINE_ID 10 ，机器码位数MACHINE_BITS 8 ，序列号位数SEQUENCE_BITS 12 
 // INFO cn.z.id.Id                               : 高性能雪花ID生成器预初始化：机器码MACHINE_ID 0 ，机器码位数MACHINE_BITS 8 ，序列号位数SEQUENCE_BITS 12 ，最大机器码MACHINE_ID 255 ；1ms最多生成ID 4096 个，起始时间 2021-01-01 08:00:00.0 ，失效时间 2299-09-27 23:10:22.207 ，大约可使用 278 年
 // INFO cn.z.id.Id                               : 高性能雪花ID生成器初始化：机器码MACHINE_ID 10 ，机器码位数MACHINE_BITS 8 ，序列号位数SEQUENCE_BITS 12 ，最大机器码MACHINE_ID 255 ；1ms最多生成ID 4096 个，起始时间 2021-01-01 08:00:00.0 ，失效时间 2299-09-27 23:10:22.207 ，大约可使用 278 年
 // INFO c.z.i.a.IdAutoConfigurationTest          : Started IdAutoConfigurationTest in 0.899 seconds (JVM running for 1.828)

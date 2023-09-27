@@ -12,47 +12,43 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @author ALI[ali-k@foxmail.com]
  * @since 1.0.0
  */
-@ConfigurationProperties(prefix = IdProperties.ID_PREFIX)
+@ConfigurationProperties(prefix = "id")
 public class IdProperties {
 
     /**
-     * 前缀{@value}
-     */
-    public static final String ID_PREFIX = "id";
-    /**
      * 机器码(默认值0)
      */
-    private Long machineId;
+    private long machineId = 0L;
     /**
      * 机器码位数(默认值8)
      */
-    private Long machineBits;
+    private long machineBits = 8L;
     /**
      * 序列号位数(默认值12)
      */
-    private Long sequenceBits;
+    private long sequenceBits = 12L;
 
-    public Long getMachineId() {
+    public long getMachineId() {
         return machineId;
     }
 
-    public void setMachineId(Long machineId) {
+    public void setMachineId(long machineId) {
         this.machineId = machineId;
     }
 
-    public Long getMachineBits() {
+    public long getMachineBits() {
         return machineBits;
     }
 
-    public void setMachineBits(Long machineBits) {
+    public void setMachineBits(long machineBits) {
         this.machineBits = machineBits;
     }
 
-    public Long getSequenceBits() {
+    public long getSequenceBits() {
         return sequenceBits;
     }
 
-    public void setSequenceBits(Long sequenceBits) {
+    public void setSequenceBits(long sequenceBits) {
         this.sequenceBits = sequenceBits;
     }
 

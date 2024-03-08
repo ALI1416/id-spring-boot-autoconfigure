@@ -16,6 +16,11 @@
 
 本项目是[高性能雪花ID生成器](https://github.com/ALI1416/id)的SpringBoot自动配置
 
+### 支持版本
+
+- [主线版本](https://github.com/ALI1416/id-spring-boot-autoconfigure/tree/master)
+- [单机版](https://github.com/ALI1416/id-spring-boot-autoconfigure/tree/single) 去除`机器码`、`机器码位数`字段，不支持分布式
+
 ## 依赖导入
 
 ```xml

@@ -29,8 +29,8 @@ public class IdAutoConfiguration {
      * @param idProperties IdProperties
      */
     public IdAutoConfiguration(IdProperties idProperties) {
-        log.info("高性能雪花ID生成器配置：机器码MACHINE_ID {} ，机器码位数MACHINE_BITS {} ，序列号位数SEQUENCE_BITS {}", idProperties.getMachineId(), idProperties.getMachineBits(), idProperties.getSequenceBits());
-        Id.init(idProperties.getMachineId(), idProperties.getMachineBits(), idProperties.getSequenceBits());
+        log.info("高性能雪花ID生成器配置：序列号位数SEQUENCE_BITS {}", idProperties.getSequenceBits());
+        Id.init(idProperties.getSequenceBits());
     }
 
 }

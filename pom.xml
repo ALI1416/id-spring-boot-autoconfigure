@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>id-spring-boot-autoconfigure</artifactId>
-  <version>3.2.0</version>
+  <version>3.2.0.single</version>
 
   <parent>
     <groupId>cn.404z</groupId>
@@ -14,7 +14,7 @@
   </parent>
 
   <name>id-spring-boot-autoconfigure</name>
-  <description>High Performance Snowflake ID Generator Springboot Autoconfigure 高性能雪花ID生成器SpringBoot自动配置</description>
+  <description>High Performance Snowflake ID Generator Springboot Autoconfigure (Single Version) 高性能雪花ID生成器SpringBoot自动配置(单机版)</description>
   <url>https://github.com/ALI1416/id-spring-boot-autoconfigure</url>
 
   <scm>
@@ -26,7 +26,7 @@
     <dependency>
       <groupId>cn.404z</groupId>
       <artifactId>id</artifactId>
-      <version>3.2.0</version>
+      <version>3.2.0.single</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>

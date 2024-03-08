@@ -1,18 +1,10 @@
 # normal 直接调用
 id:
-  machine-id: 0
-  machine-bits: 8
-  sequence-bits: 14
+  sequence-bits: 22
 
 # none 没有配置
 # 不需要配置
 
-# part 配置部分属性
-#id:
-#  machine-id: 10
-
 # init 配置属性后又手动初始化
 #id:
-#  machine-id: 0
-#  machine-bits: 8
-#  sequence-bits: 6
+#  sequence-bits: 22

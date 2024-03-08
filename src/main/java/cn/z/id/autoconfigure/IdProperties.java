@@ -16,33 +16,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public class IdProperties {
 
     /**
-     * 机器码(默认值0)
+     * 序列号位数(默认值20)
      */
-    private long machineId = 0L;
-    /**
-     * 机器码位数(默认值8)
-     */
-    private long machineBits = 8L;
-    /**
-     * 序列号位数(默认值12)
-     */
-    private long sequenceBits = 12L;
-
-    public long getMachineId() {
-        return machineId;
-    }
-
-    public void setMachineId(long machineId) {
-        this.machineId = machineId;
-    }
-
-    public long getMachineBits() {
-        return machineBits;
-    }
-
-    public void setMachineBits(long machineBits) {
-        this.machineBits = machineBits;
-    }
+    private long sequenceBits = 20L;
 
     public long getSequenceBits() {
         return sequenceBits;

@@ -27,7 +27,7 @@ class IdAutoConfigurationTest {
     /**
      * 直接调用
      */
-    // @Test
+    @Test
     void test00Normal() {
         // id:
         //   sequence-bits: 22
@@ -42,7 +42,7 @@ class IdAutoConfigurationTest {
     /**
      * 没有配置
      */
-    @Test
+    // @Test
     void test01None() {
         // # 不需要配置
         log.info("ID {}", Id.next());
@@ -55,7 +55,7 @@ class IdAutoConfigurationTest {
     /**
      * 配置属性后又手动初始化
      */
-    // @Test
+    @Test
     void test03Init() {
         // id:
         //   sequence-bits: 22

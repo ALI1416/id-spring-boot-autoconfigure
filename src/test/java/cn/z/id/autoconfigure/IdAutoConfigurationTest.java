@@ -27,7 +27,7 @@ class IdAutoConfigurationTest {
     /**
      * 直接调用
      */
-    // @Test
+    @Test
     void test00Normal() {
         // id:
         //   machine-id: 0
@@ -44,7 +44,7 @@ class IdAutoConfigurationTest {
     /**
      * 没有配置
      */
-    @Test
+    // @Test
     void test01None() {
         // # 不需要配置
         log.info("ID {}", Id.next());

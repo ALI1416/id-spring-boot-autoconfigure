@@ -27,7 +27,7 @@
 <dependency>
   <groupId>cn.404z</groupId>
   <artifactId>id-spring-boot-autoconfigure</artifactId>
-  <version>3.2.0</version>
+  <version>3.3.0</version>
 </dependency>
 <dependency>
   <groupId>org.springframework.boot</groupId>
